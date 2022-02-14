@@ -1,0 +1,13 @@
+ALGORITHM permutation ()
+x : INTEGER := 3;
+y : INTEGER := -1;
+z : INTEGER := 7; 
+var p INTEGER;
+BEGIN
+
+   p=x;
+   x=y;
+   y=z;
+   z=p;
+   write ("la valeur de x y et z ", x, y, z);
+END

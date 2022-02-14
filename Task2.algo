@@ -1,0 +1,44 @@
+ALGORITHM rental ()
+ var Distance : FLOAT ;
+ var DayNumber : INTEGER : 
+ var dayrent : INTEGER ;
+ var perday : FLOAT;
+
+BEGIN
+    readln(DayNumber);
+    readln(Distance);
+    perday := (100+0.3)*dayrent*1.18;
+    if (Distance<100 ){
+        dayrent = (((Distance*0.7 ) * DayNumber)+(DayNumber * 0.3 ))* 1.18 ;
+        if (perday>dayrent){
+            write("its better to rent by kilo ");
+        }
+        else {
+             write("its better to rent by day");
+
+        }
+    }
+    elseif ((Distance > 100) && (Distance<1000)){
+        dayrent = (((Distance*0.4 ) * DayNumber)+(DayNumber * 0.3 ))* 1.18 ;
+          if (perday>dayrent){
+            write("its better to rent by kilo ");
+        }
+        else {
+             write("its better to rent by day");
+
+        }
+    }
+    
+    elseif (Distance>1000){
+
+        dayrent = (((Distance*0.2) * DayNumber)+(DayNumber * 0.3 ))* 1.18 ;
+         if (perday>dayrent){
+            write("its better to rent by kilo ");
+        }
+        else {
+             write("its better to rent by day");
+
+        }
+     }
+
+END
